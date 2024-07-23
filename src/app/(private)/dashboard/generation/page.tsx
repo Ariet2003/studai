@@ -133,6 +133,10 @@ const Generation: FC = () => {
             className={styles.forms}
           >
             <div>
+              <p>
+                {genLang.type}{" "}
+                <span style={{ color: "gray" }}>({genLang.required[0]})</span>
+              </p>
               <Form.Item<FieldType>
                 rules={[
                   {
@@ -169,7 +173,10 @@ const Generation: FC = () => {
             </div>
             <Space className={styles.space}>
               <div>
-                <p>{genLang.theme[0]}</p>
+                <p>
+                  {genLang.theme[0]}{" "}
+                  <span style={{ color: "gray" }}>({genLang.required[0]})</span>
+                </p>
                 <Form.Item<FieldType>
                   rules={[
                     {
@@ -187,7 +194,10 @@ const Generation: FC = () => {
                 </Form.Item>
               </div>
               <div>
-                <p>{genLang.discipline[0]}</p>
+                <p>
+                  {genLang.discipline[0]}{" "}
+                  <span style={{ color: "gray" }}>({genLang.required[0]})</span>
+                </p>
                 <Form.Item<FieldType>
                   rules={[
                     {
@@ -206,7 +216,10 @@ const Generation: FC = () => {
               </div>
             </Space>
             <div>
-              <p>{genLang.overview[0]}</p>
+              <p>
+                {genLang.overview[0]}{" "}
+                <span style={{ color: "gray" }}>({genLang.required[1]})</span>
+              </p>
               <Form.Item<FieldType> name={"wishes"}>
                 <Input.TextArea
                   autoSize={{ minRows: 3, maxRows: 5 }}
@@ -293,7 +306,12 @@ const Generation: FC = () => {
                 </p>
                 <Space className={styles.space}>
                   <div>
-                    <p>{genLang.studant[0]}</p>
+                    <p>
+                      {genLang.studant[0]}{" "}
+                      <span style={{ color: "gray" }}>
+                        ({genLang.required[0]})
+                      </span>
+                    </p>
                     <Form.Item<FieldType>
                       rules={[
                         {
@@ -311,7 +329,12 @@ const Generation: FC = () => {
                     </Form.Item>
                   </div>
                   <div>
-                    <p>{genLang.tutor[0]}</p>
+                    <p>
+                      {genLang.tutor[0]}{" "}
+                      <span style={{ color: "gray" }}>
+                        ({genLang.required[0]})
+                      </span>
+                    </p>
                     <Form.Item<FieldType>
                       rules={[
                         {
@@ -330,7 +353,12 @@ const Generation: FC = () => {
                   </div>
                 </Space>
                 <div>
-                  <p>{genLang.group[0]}</p>
+                  <p>
+                    {genLang.group[0]}{" "}
+                    <span style={{ color: "gray" }}>
+                      ({genLang.required[0]})
+                    </span>
+                  </p>
                   <Form.Item<FieldType>
                     rules={[
                       {
@@ -348,7 +376,12 @@ const Generation: FC = () => {
                   </Form.Item>
                 </div>
                 <div>
-                  <p>{genLang.university[0]}</p>
+                  <p>
+                    {genLang.university[0]}{" "}
+                    <span style={{ color: "gray" }}>
+                      ({genLang.required[0]})
+                    </span>
+                  </p>
                   <Form.Item<FieldType>
                     rules={[
                       {
