@@ -73,16 +73,16 @@ const Dashboard: FC = () => {
   };
 
   const items: MenuProps["items"] = [
-    {
-      label: dashboard.profilebtn,
-      key: "0",
-      disabled: true,
-      icon: <UserOutlined />,
-      onClick: () => router.push("/dashboard/profile"),
-    },
-    {
-      type: "divider",
-    },
+    // {
+    //   label: dashboard.profilebtn,
+    //   key: "0",
+    //   disabled: true,
+    //   icon: <UserOutlined />,
+    //   onClick: () => router.push("/dashboard/profile"),
+    // },
+    // {
+    //   type: "divider",
+    // },
     {
       label: dashboard.logoutbtn,
       key: "1",
